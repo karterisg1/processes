@@ -1,0 +1,15 @@
+jobCommander issueJob ls -l /home/users/nikosp/SysPro2024Data
+jobCommander issueJob wget http://rhodes.mm.di.uoa.gr:8888/others/genome/chr19.fa
+jobCommander issueJob grep "AATGGG" /home/users/nikosp/SysPro2024Data/gene.fasta
+jobCommander issueJob cat /home/users/nikosp/SysPro2024Data/gene.fasta
+jobCommander setConcurrency 4
+jobCommander setConcurrency 1
+jobCommander stop job_1
+jobCommander stop job_15
+jobCommander poll running
+jobCommander poll queued
+jobCommander exit
+
+
+
+
